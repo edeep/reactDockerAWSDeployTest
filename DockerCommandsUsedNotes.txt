@@ -1,0 +1,17 @@
+Build
+docker build -t pradreactdeploytest01/react-app .
+
+
+Run
+docker run -d -it  -p 80:80 --name prad-react-deploy-test-01 pradreactdeploytest01/react-app:latest
+
+Login into container
+sudo docker exec -it prad-react-deploy-test-01 sh
+
+
+
+172-31-36-120:80/
+
+13.232.64.53:80 
+
+http://ec2-13-232-64-53.ap-south-1.compute.amazonaws.com:80/
